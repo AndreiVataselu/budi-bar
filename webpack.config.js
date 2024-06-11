@@ -7,7 +7,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Budi\'s Banana Bar'
+            title: 'Budi\'s Banana Bar',
+            template: 'src/index.html',
         }),
     ],
     module: {

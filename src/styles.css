@@ -1,0 +1,64 @@
+:root {
+    --budi-dark-orange: #F55226;
+    --budi-light-orange: #FFAB48;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('./resources/Yellowtail-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url('./resources/Bungee-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--budi-light-orange);
+}
+
+.button {
+    font-family: 'Bungee';
+    font-size: 24px;
+    border-radius: 4px;
+    border: 0px;
+    padding: 14px 24px;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--budi-dark-orange);
+    color: white;
+}
+
+.button-tertiary {
+    background-color: transparent;
+    color: var(--budi-dark-orange);
+}
+
+.tab-bar {
+    display: flex;
+    padding: 14px 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+    border: 0px;
+    border-radius: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+#shop-name {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 96px;
+    color: var(--budi-dark-orange);
+    margin: 40px 0;
+}
+
+header {
+    text-align: center;
+}
