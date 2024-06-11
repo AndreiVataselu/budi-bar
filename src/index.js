@@ -1,4 +1,5 @@
 import './styles.css'
+import Home from './home.js';
 
 const TabBar = { 
     home: "home",
@@ -16,8 +17,10 @@ const buttonPrimaryClass = "button-primary";
 const buttonTertiaryClass = "button-tertiary";
 
 const switchTab = (buttonName) => { 
+    let pageNode;
     if (buttonName === "home") {
         activeTab = TabBar.home;
+        pageNode = Home();
     } else if (buttonName === "menu") {
         activeTab = TabBar.menu;
     } else if (buttonName === "about") {
@@ -25,6 +28,11 @@ const switchTab = (buttonName) => {
     }
 
     makeActiveButton(buttonName);
+    clearContent();
+
+    if (pageNode !== undefined) {
+        document.querySelector("#content").appendChild(pageNode);
+    }
 }
 
 const makeActiveButton = (buttonName) => {
@@ -39,5 +47,10 @@ const makeActiveButton = (buttonName) => {
         }
     });
 };
+
+const clearContent = () => {
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
+}
 
 document.querySelectorAll(".button").forEach((button) => button.addEventListener("click", didClickButton));

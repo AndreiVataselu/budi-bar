@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=  htmlWebpackPlugin.options.title %></title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
 </head>
+
 <body>
     <header>
         <h1 id="shop-name">Budi's Banana Bar</h1>
@@ -15,6 +19,36 @@
         </nav>
     </header>
     <div id="content">
+        <div class="home">
+            <div class="section">
+                <p class="section-title">Hours</p>
+                <div class="timetable">
+                    <ul class="timetable-days">
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                    </ul>
+                    <ul class="timetable-hours">
+                        <li>09-18</li>
+                        <li>09-18</li>
+                        <li>09-18</li>
+                        <li>09-18</li>
+                        <li>09-18</li>
+                        <li>10-19</li>
+                        <li>CLOSED</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <p class="section-title">Location</p>
+                <p>Bukit Baka Bukit Raya National Park</p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
