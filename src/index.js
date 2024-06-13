@@ -59,5 +59,5 @@ const clearContent = () => {
 }
 
 document.querySelectorAll(".button").forEach((button) => button.addEventListener("click", didClickButton));
-// clearContent();
-// document.querySelector("#content").appendChild(Home());
+clearContent();
+document.querySelector("#content").appendChild(Home());
