@@ -1,6 +1,8 @@
 import './styles.css'
+import budi from './resources/budi.png';
 import Home from './home.js';
 import Menu from './menu.js';
+import About from './about.js';
 
 const TabBar = { 
     home: "home",
@@ -27,6 +29,7 @@ const switchTab = (buttonName) => {
         pageNode = Menu();
     } else if (buttonName === "about") {
         activeTab = TabBar.about;
+        pageNode = About();
     }
 
     makeActiveButton(buttonName);
@@ -56,5 +59,5 @@ const clearContent = () => {
 }
 
 document.querySelectorAll(".button").forEach((button) => button.addEventListener("click", didClickButton));
-clearContent();
-document.querySelector("#content").appendChild(Home());
+// clearContent();
+// document.querySelector("#content").appendChild(Home());

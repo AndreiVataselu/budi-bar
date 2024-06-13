@@ -178,3 +178,38 @@ header {
     font-weight: bold;
     margin: 0;
 }
+
+/* ABOUT */
+.about { 
+    text-align: center;
+    padding: 40px;
+}
+
+.budi-container {
+    font-family: "Yellowtail", sans-serif;
+    color: var(--budi-dark-orange);
+    font-size: 64px;
+}
+
+.budi-container>p{
+    margin: 0;
+}
+
+#budi {
+    --image-size: 250px;
+    border: 1px;
+    width: var(--image-size);
+    height: var(--image-size);
+    border-radius: calc(var(--image-size)/2);
+    object-fit: cover;
+}
+
+#budi-description { 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    max-width: 800px;
+    margin: 24px auto;
+    line-height: 1.5em;
+}
