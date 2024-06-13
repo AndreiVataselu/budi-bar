@@ -1,5 +1,6 @@
 import './styles.css'
 import Home from './home.js';
+import Menu from './menu.js';
 
 const TabBar = { 
     home: "home",
@@ -23,6 +24,7 @@ const switchTab = (buttonName) => {
         pageNode = Home();
     } else if (buttonName === "menu") {
         activeTab = TabBar.menu;
+        pageNode = Menu();
     } else if (buttonName === "about") {
         activeTab = TabBar.about;
     }
@@ -54,3 +56,5 @@ const clearContent = () => {
 }
 
 document.querySelectorAll(".button").forEach((button) => button.addEventListener("click", didClickButton));
+clearContent();
+document.querySelector("#content").appendChild(Home());
